@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { Component, AfterViewInit } from '@angular/core';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 @Component({
   standalone: true,
@@ -8,4 +10,12 @@ import { RouterModule } from '@angular/router';
   styleUrls: ['./inicio.css'],
   imports: [RouterModule]   // ✅ IMPORTANTE para usar routerLink
 })
-export class Inicio {}
+export class Inicio implements AfterViewInit {
+
+  ngAfterViewInit() {
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  }
+}
