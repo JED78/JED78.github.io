@@ -110,3 +110,24 @@
   color: #0078ff;
   transform: translateY(-3px);
 }
+
+/* ANIMACIÓN GENERAL */
+.inicio-anim {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideIn 0.7s forwards ease-out;
+}
+
+/* DELAYS ESCALONADOS */
+.inicio-delay-1 { animation-delay: 0.1s; }
+.inicio-delay-2 { animation-delay: 0.3s; }
+.inicio-delay-3 { animation-delay: 0.5s; }
+.inicio-delay-4 { animation-delay: 0.7s; }
+
+/* KEYFRAMES */
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -10,12 +10,8 @@ import 'aos/dist/aos.css';
   styleUrls: ['./inicio.css'],
   imports: [RouterModule]   // ✅ IMPORTANTE para usar routerLink
 })
-export class Inicio implements AfterViewInit {
+export class Inicio  {
 
-  ngAfterViewInit() {
-    AOS.init({
-      duration: 1000,
-      once: true
-    });
-  }
+ 
+
 }

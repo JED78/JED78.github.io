@@ -54,3 +54,101 @@ textarea {
 }
 
 p { color: white;}
+
+/* CONTENEDOR */
+.contacto {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 20px;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+}
+
+/* TITULO */
+.contacto-titulo {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: #111;
+}
+
+/* DESCRIPCIÓN */
+.contacto-descripcion {
+  color: #555;
+  margin-bottom: 30px;
+}
+
+/* FORMULARIO */
+.contacto-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* CAMPOS */
+.campo {
+  text-align: left;
+}
+
+.campo label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.campo input,
+.campo textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background: #f7f7f7;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.campo input:hover,
+.campo textarea:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* BOTÓN */
+.btn-enviar {
+  width: 100%;
+  padding: 12px;
+  background: #111;
+  color: white;
+  border-radius: 8px;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.btn-enviar:hover {
+  background: #333;
+  transform: scale(1.03);
+}
+
+/* ANIMACIÓN IGUAL A CERTIFICACIONES */
+.contacto-anim {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: slideIn 0.6s forwards;
+}
+
+/* DELAYS ESCALONADOS */
+.contacto-anim:nth-child(1) { animation-delay: 0.1s; }
+.contacto-anim:nth-child(2) { animation-delay: 0.2s; }
+.contacto-anim:nth-child(3) { animation-delay: 0.3s; }
+.contacto-anim:nth-child(4) { animation-delay: 0.4s; }
+.contacto-anim:nth-child(5) { animation-delay: 0.5s; }
+.contacto-anim:nth-child(6) { animation-delay: 0.6s; }
+
+/* KEYFRAMES */
+@keyframes slideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
