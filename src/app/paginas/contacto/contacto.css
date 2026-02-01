@@ -130,26 +130,88 @@ p { color: white;}
   transform: scale(1.03);
 }
 
-/* ANIMACIÓN IGUAL A CERTIFICACIONES */
+/* Animación general */
 .contacto-anim {
   opacity: 0;
   transform: translateY(20px);
-  animation: slideIn 0.6s forwards;
+  animation: contactoSlide 0.6s forwards ease-out;
 }
 
-/* DELAYS ESCALONADOS */
-.contacto-anim:nth-child(1) { animation-delay: 0.1s; }
-.contacto-anim:nth-child(2) { animation-delay: 0.2s; }
-.contacto-anim:nth-child(3) { animation-delay: 0.3s; }
-.contacto-anim:nth-child(4) { animation-delay: 0.4s; }
-.contacto-anim:nth-child(5) { animation-delay: 0.5s; }
-.contacto-anim:nth-child(6) { animation-delay: 0.6s; }
+/* Delays */
+.contacto-delay-1 { animation-delay: 0.1s; }
+.contacto-delay-2 { animation-delay: 0.2s; }
+.contacto-delay-3 { animation-delay: 0.3s; }
+.contacto-delay-4 { animation-delay: 0.4s; }
 
-/* KEYFRAMES */
-@keyframes slideIn {
+/* Keyframes */
+@keyframes contactoSlide {
   to {
     opacity: 1;
     transform: translateY(0);
   }
 }
 
+/* Caja del email */
+.email-box {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #111;
+  color: white;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  transition: transform 0.3s ease, background 0.3s ease;
+  cursor: pointer;
+}
+
+.email-box:hover {
+  transform: scale(1.05);
+  background: #333;
+}
+
+.email-text {
+  font-weight: 500;
+}
+
+/* Animación general */
+.contacto-anim {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: contactoSlide 0.6s forwards ease-out;
+}
+
+/* Delays */
+.contacto-delay-1 { animation-delay: 0.1s; }
+.contacto-delay-2 { animation-delay: 0.2s; }
+.contacto-delay-3 { animation-delay: 0.3s; }
+.contacto-delay-4 { animation-delay: 0.4s; }
+
+/* Keyframes */
+@keyframes contactoSlide {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Caja del email */
+.email-box {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #111;
+  color: white;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  letter-spacing: 0.5px;
+  transition: transform 0.3s ease, background 0.3s ease;
+  cursor: pointer;
+}
+
+.email-box:hover {
+  transform: scale(1.05);
+  background: #333;
+}
+
+.email-text {
+  font-weight: 500;
+}
