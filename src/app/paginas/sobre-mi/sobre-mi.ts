@@ -1,18 +1,10 @@
-import { Component, AfterViewInit } from '@angular/core';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-sobre-mi',
   templateUrl: './sobre-mi.html',
-  styleUrls: ['./sobre-mi.css']
+  styleUrl: './sobre-mi.css',
 })
-export class SobreMi implements AfterViewInit {
+export class SobreMi {
 
-  ngAfterViewInit() {
-    AOS.init({
-      duration: 1000,
-      once: true
-    });
-  }
 }
