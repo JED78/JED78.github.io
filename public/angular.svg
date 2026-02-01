@@ -1,0 +1,6 @@
+<svg width="64" height="64" viewBox="0 0 250 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Angular logo">
+  <title>Angular</title>
+  <polygon fill="#DD0031" points="125,10 10,50 30,200 125,240 220,200 240,50"/>
+  <polygon fill="#C3002F" points="125,10 125,240 220,200 240,50"/>
+  <path fill="#FFFFFF" d="M125 55 L70 180 H95 L106 152 H144 L155 180 H180 L125 55 Z M135 135 H115 L125 110 L135 135 Z"/>
+</svg>

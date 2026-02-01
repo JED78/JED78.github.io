@@ -1,0 +1,30 @@
+<svg width="64" height="64" viewBox="0 0 250 250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="C# / .NET logo">
+  <title>C# / .NET</title>
+  <!-- Fondo circular -->
+  <circle cx="125" cy="125" r="115" fill="#68217A"/>
+  <!-- Anillo exterior suave -->
+  <circle cx="125" cy="125" r="115" fill="none" stroke="#8E44AD" stroke-width="10"/>
+
+  <!-- Letra C -->
+  <path
+    d="M165 95
+       Q150 70 125 70
+       Q95 70 80 95
+       Q65 120 65 145
+       Q65 170 80 195
+       Q95 220 125 220
+       Q150 220 165 195"
+    fill="none"
+    stroke="#FFFFFF"
+    stroke-width="14"
+    stroke-linecap="round"
+  />
+
+  <!-- Símbolo # -->
+  <g transform="translate(135, 105) scale(0.9)" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round">
+    <line x1="-8" y1="-12" x2="8" y2="-12"/>
+    <line x1="-8" y1="0" x2="8" y2="0"/>
+    <line x1="-4" y1="-18" x2="-4" y2="6"/>
+    <line x1="4" y1="-18" x2="4" y2="6"/>
+  </g>
+</svg>

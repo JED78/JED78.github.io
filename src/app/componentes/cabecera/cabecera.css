@@ -1,0 +1,94 @@
+.cabecera {
+  position: relative;
+  height: 100px;
+  overflow: hidden;
+  background: white;
+}
+
+/* FONDO DE PARTÍCULAS */
+#tsparticles-header {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0 !important;   /* 👈 fuerza detrás */
+  pointer-events: none;
+}
+
+/* Contenedor principal */
+.cabecera .contenedor {
+  position: relative;
+  z-index: 10 !important;  /* 👈 fuerza delante */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  padding: 0 20px;
+}
+
+/* LOGO */
+.logo img {
+  height: 80px;
+  width: auto;
+}
+
+/* NAVEGACIÓN DESKTOP */
+.navegacion {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+/* LINKS */
+.navegacion a {
+  color: black;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  z-index: 11;   /* 👈 extra seguridad */
+}
+
+.navegacion a.activo {
+  border-bottom: 2px solid black;
+}
+
+/* BOTÓN HAMBURGUESA */
+.btn-menu {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 26px;
+  color: black;
+  cursor: pointer;
+  position: relative;
+  z-index: 11;   /* 👈 extra seguridad */
+}
+
+/* ===== RESPONSIVE (MÓVIL) ===== */
+@media (max-width: 768px) {
+
+  .btn-menu {
+    display: block;
+  }
+
+  .navegacion {
+    position: absolute;
+    top: 100px;
+    right: 0;
+    width: 100%;
+    background: white;
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px 0;
+    display: none;
+    z-index: 20 !important;   /* 👈 encima de TODO */
+  }
+
+  .navegacion.abierto {
+    display: flex;
+  }
+
+  .navegacion a {
+    padding: 10px 20px;
+  }
+}
