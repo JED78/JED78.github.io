@@ -1,11 +1,20 @@
-import { Component } from '@angular/core';
+import { Component, AfterViewInit } from '@angular/core';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 @Component({
   selector: 'app-contacto',
-  imports: [],
   templateUrl: './contacto.html',
-  styleUrl: './contacto.css',
+  styleUrls: ['./contacto.css']
 })
-export class Contacto {
+export class Contacto implements AfterViewInit {
 
+  ngAfterViewInit() {
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true,
+      mirror: false
+    });
+  }
 }

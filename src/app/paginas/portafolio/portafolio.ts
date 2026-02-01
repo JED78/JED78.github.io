@@ -1,11 +1,19 @@
 import { Component, AfterViewInit } from '@angular/core';
-import { tsParticles } from "@tsparticles/engine";
-import { loadBasic } from "@tsparticles/basic";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 @Component({
   selector: 'app-portafolio',
-  standalone: true,
   templateUrl: './portafolio.html',
-  styleUrls: ['./portafolio.css'],
+  styleUrls: ['./portafolio.css']
 })
-export class Portafolio {}
+export class Portafolio implements AfterViewInit {
+
+  ngAfterViewInit() {
+    AOS.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+      once: true
+    });
+  }
+}
