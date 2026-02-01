@@ -10,8 +10,4 @@ import 'aos/dist/aos.css';
   styleUrls: ['./inicio.css'],
   imports: [RouterModule]   // ✅ IMPORTANTE para usar routerLink
 })
-export class Inicio  {
-
- 
-
-}
+export class Inicio {}
